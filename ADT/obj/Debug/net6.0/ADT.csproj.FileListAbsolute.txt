@@ -1,0 +1,15 @@
+C:\Users\leham\source\repos\ADT\ADT\bin\Debug\net6.0\ADT.exe
+C:\Users\leham\source\repos\ADT\ADT\bin\Debug\net6.0\ADT.deps.json
+C:\Users\leham\source\repos\ADT\ADT\bin\Debug\net6.0\ADT.runtimeconfig.json
+C:\Users\leham\source\repos\ADT\ADT\bin\Debug\net6.0\ADT.dll
+C:\Users\leham\source\repos\ADT\ADT\bin\Debug\net6.0\ADT.pdb
+C:\Users\leham\source\repos\ADT\ADT\obj\Debug\net6.0\ADT.csproj.AssemblyReference.cache
+C:\Users\leham\source\repos\ADT\ADT\obj\Debug\net6.0\ADT.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leham\source\repos\ADT\ADT\obj\Debug\net6.0\ADT.AssemblyInfoInputs.cache
+C:\Users\leham\source\repos\ADT\ADT\obj\Debug\net6.0\ADT.AssemblyInfo.cs
+C:\Users\leham\source\repos\ADT\ADT\obj\Debug\net6.0\ADT.csproj.CoreCompileInputs.cache
+C:\Users\leham\source\repos\ADT\ADT\obj\Debug\net6.0\ADT.dll
+C:\Users\leham\source\repos\ADT\ADT\obj\Debug\net6.0\refint\ADT.dll
+C:\Users\leham\source\repos\ADT\ADT\obj\Debug\net6.0\ADT.pdb
+C:\Users\leham\source\repos\ADT\ADT\obj\Debug\net6.0\ADT.genruntimeconfig.cache
+C:\Users\leham\source\repos\ADT\ADT\obj\Debug\net6.0\ref\ADT.dll
