@@ -2,9 +2,13 @@ namespace ADT
 {
     public class Person
     {
-        public String Name{get ; set;}
+        private String Name;
         public Person (String pname) {
             Name = pname;
+        }
+
+        public String getName(){
+            return Name;
         }
     }
 }

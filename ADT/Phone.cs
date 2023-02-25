@@ -2,9 +2,12 @@ namespace ADT
 {
     public class Phone
     {
-        public String phone{get; set;}
+        private String phone;
         public Phone (String phonenr){
             phone = phonenr;
+        }
+        public String getPhone(){
+            return phone;
         }
     }
 }

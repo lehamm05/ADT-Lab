@@ -11,7 +11,7 @@ namespace ADT
         public void addEntry(String name, Phone newnumber){
             Person pers = null;
             foreach (Person member in members){
-                if (member.Name.Equals(name)){
+                if (member.getName().Equals(name)){
                     pers = member;
                     if (telephones.ContainsKey(member) && !telephones[member].Contains(newnumber)){
                         telephones[member].Add(newnumber);
@@ -22,7 +22,7 @@ namespace ADT
                 }
             }
             try{
-                Console.WriteLine("Added Number for " + pers.Name + " : " + newnumber.phone);
+                Console.WriteLine("Added Number for " + pers.getName() + " : " + newnumber.getPhone());
             }
             catch (NullReferenceException){
                 Console.WriteLine("Not a member");
@@ -31,13 +31,13 @@ namespace ADT
         public List<Phone> findPhones(String name){
             List<Phone> foundTelephones = null;
             foreach (var entry in telephones){
-                if(entry.Key.Name == name){
+                if(entry.Key.getName() == name){
                     foundTelephones =  entry.Value;
                 }
             }
             try {
                 foreach (Phone phonenumber in foundTelephones){
-                    Console.WriteLine(phonenumber.phone);
+                    Console.WriteLine(phonenumber.getPhone());
                 }
             }
             catch(NullReferenceException){
@@ -49,11 +49,15 @@ namespace ADT
             try{
                 bool success = false;
                 foreach (var entry in telephones){
-                    if(entry.Key.Name == name && entry.Value.Contains(oldnumber)){
+                    if(entry.Key.getName() == name && entry.Value.Contains(oldnumber)){
                         entry.Value.Remove(oldnumber);
-                        Console.WriteLine("Removed " + oldnumber.phone);
+                        Console.WriteLine("Removed " + oldnumber.getPhone());
                         success = true;
+                        if (entry.Value.Count()==0){
+                            telephones.Remove(entry.Key);
+                        }
                     }
+
                 }
                 if (success == false){
                     throw new EntryNotFoundException();
