@@ -60,11 +60,11 @@ namespace ADT
 
                 }
                 if (success == false){
-                    throw new EntryNotFoundException();
+                    throw new EntryNotFoundException("Entry not found");
                 }
             }
-            catch (Exception){
-                Console.WriteLine("Entry Not Found");
+            catch (EntryNotFoundException  e){
+                Console.WriteLine($"Exeption caught. {e.Message}");
             }
         }
     }
